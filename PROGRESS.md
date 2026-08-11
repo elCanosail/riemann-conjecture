@@ -38,7 +38,7 @@
 ## Status
 
 ✅ **Fase 0: Setup** — complete (repo, references, baseline audit)
-🟡 **Fase 1: Survey** — 3 sub-agents running (classical, pair-correlation, physics)
-🟡 **Fase 2: Computational verification** — first 50 zeros verified (100% on line)
+✅ **Fase 1: Survey** — complete (3 surveys + synthesis notebook)
+🟡 **Fase 2: Computational + adversarial analysis** — next
 ⬜ **Fase 3: Multi-model research rounds** — pending
 ⬜ **Fase 4: Documentation** — pending
