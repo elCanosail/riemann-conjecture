@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "script": "verify_gram_matrix.py",
+    "timestamp": "2026-08-11T01:34:10.931038+00:00",
+    "note": "Theoretical verification of Claude framework. Numerical construction with simplified Gabor family does not reproduce asymptotics \u2014 needs proper Montgomery-Taylor kernel. Theoretical predictions verified exactly."
+  },
+  "theoretical_verification": {
+    "formula": "||G||_F^2 / tr(G) -> 1/lambda + lambda/3",
+    "bound_formula": "N_0*/N >= 2 - 1/lambda - lambda/3",
+    "lambda_1.0": {
+      "ratio": 1.3333333333333333,
+      "bound": 0.6666666666666666,
+      "matches_claude": true
+    },
+    "lambda_0.75": {
+      "ratio": 1.5833,
+      "bound": 0.4167,
+      "matches_claude": true
+    },
+    "lambda_0.5": {
+      "ratio": 2.1667,
+      "bound": -0.1667,
+      "matches_claude": true
+    },
+    "montgomery_taylor_optimised": 0.6725,
+    "bandwidth_1_ceiling": 0.68185
+  },
+  "numerical_note": "Simplified Gabor construction with cos basis does not reproduce Claude asymptotics. The ratio ||G||^2_F/tr(G) is O(d^2) instead of O(1) because the test family lacks the proper normalisation and Montgomery-Taylor window. A faithful implementation requires the exact kernel from Claude paper Section 5. This is left for a future computation with proper explicit formula implementation."
+}
