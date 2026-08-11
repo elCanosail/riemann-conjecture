@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite as below."
+title: "Advancing the Proportion of Riemann Zeta Zeros on the Critical Line: A Multi-Model Research Program"
+authors:
+  - given-names: "Elcano"
+    family-names: "Research Program"
+    affiliation: "github.com/elCanosail/riemann-conjecture"
+  - given-names: "Chema"
+    family-names: "Hontoria"
+    type: contact
+date-released: "2026-08-11"
+preferred-citation:
+  type: software
+  title: "riemann-conjecture: Multi-model adversarial analysis of the 2/3 information barrier"
+  authors:
+    - given-names: "Elcano"
+      family-names: "Research Program"
+  year: 2026
+  url: "https://github.com/elCanosail/riemann-conjecture"
+version: "1.0.0"
+license: "MIT"
+license-url: "https://opensource.org/licenses/MIT"
+type: software
+repository-code: "https://github.com/elCanosail/riemann-conjecture"
+keywords:
+  - Riemann Hypothesis
+  - zeta zeros
+  - pair correlation
+  - analytic number theory
+  - multi-model research
+  - information barrier
