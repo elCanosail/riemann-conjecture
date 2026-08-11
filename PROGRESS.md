@@ -37,8 +37,8 @@
 
 ## Status
 
-🟡 **Fase 0: Setup** — in progress
-⬜ **Fase 1: Survey** — launching
-⬜ **Fase 2: Computational verification** — pending
+✅ **Fase 0: Setup** — complete (repo, references, baseline audit)
+🟡 **Fase 1: Survey** — 3 sub-agents running (classical, pair-correlation, physics)
+🟡 **Fase 2: Computational verification** — first 50 zeros verified (100% on line)
 ⬜ **Fase 3: Multi-model research rounds** — pending
 ⬜ **Fase 4: Documentation** — pending
