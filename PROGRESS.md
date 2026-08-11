@@ -39,6 +39,6 @@
 
 ✅ **Fase 0: Setup** — complete (repo, references, baseline audit)
 ✅ **Fase 1: Survey** — complete (3 surveys + synthesis notebook)
-✅ **Fase 2: Computational + adversarial analysis** — complete
-🟡 **Fase 3: Multi-model research rounds** — launching
-⬜ **Fase 4: Documentation** — LaTeX skeleton ready
+✅ **Fase 2: Computational + adversarial analysis** — complete (3 analyses + synthesis)
+✅ **Fase 3: Multi-model research rounds** — complete (3 analyses + synthesis)
+🟡 **Fase 4: Documentation** — paper skeleton with key sections, needs final polish
