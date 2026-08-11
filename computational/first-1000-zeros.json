@@ -1,0 +1,10 @@
+{
+  "range": "1-1000",
+  "total": 1000,
+  "on_line": 1000,
+  "off_line": 0,
+  "max_re_deviation": 0,
+  "proportion_on_line": 1.0,
+  "timestamp": "2026-08-11T02:20:52.809291+00:00",
+  "note": "Numerical verification only. Not a proof."
+}
