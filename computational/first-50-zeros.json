@@ -1,0 +1,71 @@
+{
+  "range": "zeros 1-50",
+  "total": 50,
+  "on_line": 50,
+  "off_line": 0,
+  "max_re_deviation": 0,
+  "proportion_on_line": 1.0,
+  "zeros": [
+    {
+      "n": 1,
+      "re": 0.5,
+      "im": 14.134725141734695,
+      "on_line": true
+    },
+    {
+      "n": 2,
+      "re": 0.5,
+      "im": 21.022039638771556,
+      "on_line": true
+    },
+    {
+      "n": 3,
+      "re": 0.5,
+      "im": 25.01085758014569,
+      "on_line": true
+    },
+    {
+      "n": 4,
+      "re": 0.5,
+      "im": 30.424876125859512,
+      "on_line": true
+    },
+    {
+      "n": 5,
+      "re": 0.5,
+      "im": 32.93506158773919,
+      "on_line": true
+    },
+    {
+      "n": 6,
+      "re": 0.5,
+      "im": 37.586178158825675,
+      "on_line": true
+    },
+    {
+      "n": 7,
+      "re": 0.5,
+      "im": 40.9187190121475,
+      "on_line": true
+    },
+    {
+      "n": 8,
+      "re": 0.5,
+      "im": 43.327073280915,
+      "on_line": true
+    },
+    {
+      "n": 9,
+      "re": 0.5,
+      "im": 48.00515088116716,
+      "on_line": true
+    },
+    {
+      "n": 10,
+      "re": 0.5,
+      "im": 49.7738324776723,
+      "on_line": true
+    }
+  ],
+  "note": "Numerical verification only. Not a proof."
+}
