@@ -368,17 +368,22 @@ A Lean 4 formalization is available at [anthropics/zeta-23-lean](https://github.
 ### The Three Main Theorems
 
 **Theorem A.** For $0 < \lambda \leq 1$:
+
 $$N_0^*(T, 2T) \geq H(\lambda) N(T, 2T)$$
+
 where $H(\lambda) = 2 - \lambda^{-1} - \lambda^3/3$. At $\lambda = 1$, $H(1) = 2/3$.
 
 **Theorem B.** Same bound for simple zeros on the line:
+
 $$N_0^s(T, 2T) \geq H(\lambda) N(T, 2T)$$
 
 **Theorem C.** For distinct zeros:
+
 $$N_d(T, 2T) \geq \max(H_d(\lambda), F(\lambda)) N(T, 2T)$$
+
 where $H_d(\lambda) = (1 + H(\lambda))/2$ and $F(\lambda) = \lambda(1+\lambda^{2/3})^{-1}$. At $\lambda = 1$, $H_d(1) = 5/6$.
 
-With the Montgomery–Taylor optimised test family, the constants become:
+With the Montgomery-Taylor optimised test family, the constants become:
 - Simple zeros on the critical line: **0.6725**
 - Distinct zeros on the critical line: **0.6725**
 - Distinct zeros (anywhere): **0.83625**
@@ -393,9 +398,10 @@ where:
 - $P$ is the contribution from on-line zeros (positive semidefinite, rank $\leq s$)
 - $Q$ is the contribution from off-line pairs (signature $(p, p)$)
 
-And then applying a **rank–trace inequality** (Lemma 3.2) proved via **von Neumann's trace inequality**:
+And then applying a **rank-trace inequality** (Lemma 3.2) proved via **von Neumann's trace inequality**:
 
 For Hermitian $P \succeq 0$ of rank $\leq r$ and Hermitian $Q$ with $\leq b$ positive eigenvalues:
+
 $$r \geq \frac{(\operatorname{tr}(P+Q))^2}{\|P+Q\|_F^2} - b$$
 
 This is the **matrix analogue** of $m_\rho^2 \geq 2m_\rho - 1$ but applied to the **aggregate** structure rather than termwise.
@@ -410,9 +416,9 @@ At $\lambda = 1$: $s \geq (2/3 - o(1))N$.
 
 1. **Functional equation** of $\zeta(s)$
 2. **Weil's explicit formula** for $\zeta(s)$
-3. **Chebyshev–Mertens estimates** for prime-power sums
-4. **Montgomery–Vaughan generalised Hilbert inequality**
-5. **Riemann–von Mangoldt zero-counting formula**
+3. **Chebyshev-Mertens estimates** for prime-power sums
+4. **Montgomery-Vaughan generalised Hilbert inequality**
+5. **Riemann-von Mangoldt zero-counting formula**
 6. **Sylvester's law of inertia**
 7. **Von Neumann's trace inequality** (the new ingredient)
 
@@ -421,7 +427,7 @@ No mollifier, no Levinson's method, no zero-density estimate, no zero-free regio
 ### What the Method Does NOT Say
 
 - It has **no bearing** on RH in either direction.
-- It certifies that **at least 2/3 of the zeros are on the line** — it says nothing about the remaining third, which are not shown to be off the line but simply not reached by the certificate.
+- It certifies that **at least 2/3 of the zeros are on the line** -- it says nothing about the remaining third, which are not shown to be off the line but simply not reached by the certificate.
 - The inputs are insensitive to $o(N)$ off-line zeros.
 
 ---
@@ -436,22 +442,22 @@ Claude's paper explicitly states that reaching higher proportions by the same ro
 - $0.90$: Fourier support to $\approx 1.70$
 
 This requires **unconditional pair-correlation estimates at $\lambda > 1$**, which requires:
-1. Hardy–Littlewood-level prime-pair correlation estimates
+1. Hardy-Littlewood-level prime-pair correlation estimates
 2. Uniformity for prime correlations at scales $\gg X$ (where $X = T^\lambda$)
 
-Currently, the best unconditional results are at the Bombieri–Vinogradov level (average over moduli), which is insufficient for the pointwise correlations needed.
+Currently, the best unconditional results are at the Bombieri-Vinogradov level (average over moduli), which is insufficient for the pointwise correlations needed.
 
 ### The Alternative Hypothesis
 
-Goldston, Lee, Suriajaya, and Schettler (GLSS25) showed that the **Alternative Hypothesis** (AH) — which posits a different pair-correlation density from the GUE — also implies asymptotically 100% of zeros are simple and on the critical line. AH is a counter-hypothesis to Montgomery's PCC that could arise from Landau–Siegel zeros. Both PCC and AH lead to the same conclusion about simple zeros, but they describe **different** distributions of zero spacings.
+Goldston, Lee, Suriajaya, and Schettler (GLSS25) showed that the **Alternative Hypothesis** (AH) -- which posits a different pair-correlation density from the GUE -- also implies asymptotically 100% of zeros are simple and on the critical line. AH is a counter-hypothesis to Montgomery's PCC that could arise from Landau-Siegel zeros. Both PCC and AH lead to the same conclusion about simple zeros, but they describe **different** distributions of zero spacings.
 
 ### Higher Moments via k-Tuple Correlations
 
 Montgomery conjectured that the $k$-tuple correlation function matches GUE. Proving this unconditionally (even for $k=3$) would give access to third and higher moments, which could potentially improve the bounds further. However, the current technology for even the pair-correlation at bandwidth 1 is the result of 50+ years of work by many mathematicians.
 
-### The Rank–Trace Idea
+### The Rank-Trace Idea
 
-Claude's rank–trace approach is novel and opens a new direction: **linear-algebraic reading of the Weil form**. This could potentially be:
+Claude's rank-trace approach is novel and opens a new direction: **linear-algebraic reading of the Weil form**. This could potentially be:
 - Applied to $L$-functions beyond $\zeta(s)$
 - Combined with other matrix-analytic inequalities (e.g., Horn's inequalities, free probability)
 - Extended to higher-order Weil forms (Bombieri's quadratic functional has natural higher-order analogues)
@@ -466,17 +472,17 @@ The 0.68185 ceiling teaches a structural lesson: **any approach that reads only 
 
 ### The Deepest Open Questions
 
-1. **Unconditional pair-correlation at $\lambda > 1$**: Requires breakthroughs in prime correlations, essentially equivalent to progress on the Hardy–Littlewood conjecture.
+1. **Unconditional pair-correlation at $\lambda > 1$**: Requires breakthroughs in prime correlations, essentially equivalent to progress on the Hardy-Littlewood conjecture.
 
 2. **Unconditional k-tuple correlations for $k \geq 3$**: Even at bandwidth 1, this is wide open.
 
-3. **Can the rank–trace idea be refined?** The von Neumann inequality gives a specific bound. Could sharper matrix inequalities (e.g., from free probability or non-commutative geometry) extract more information from the same data?
+3. **Can the rank-trace idea be refined?** The von Neumann inequality gives a specific bound. Could sharper matrix inequalities (e.g., from free probability or non-commutative geometry) extract more information from the same data?
 
 4. **Does the Weil form compression have a spectral gap?** Bombieri's (2000) work suggests that negative eigenvalues of finite truncations correspond to off-line zeros. Can this be made quantitative?
 
-5. **Is 2/3 the right target?** Assuming RH, Conrey–Ghosh–Gonek (with GLH) and Bui–Heath-Brown (unconditionally under RH) get $19/27 \approx 0.7037$ via mollifiers. The pair-correlation approach is currently behind the mollifier approach *under RH*. The gap between them is a major open question.
+5. **Is 2/3 the right target?** Assuming RH, Conrey-Ghosh-Gonek (with GLH) and Bui-Heath-Brown (unconditionally under RH) get $19/27 \approx 0.7037$ via mollifiers. The pair-correlation approach is currently behind the mollifier approach *under RH*. The gap between them is a major open question.
 
-6. **What does Claude's Lean proof teach us?** The fact that Claude produced a complete, $\texttt{sorry}$-free Lean formalisation in a matter of days suggests that **formal verification** may become a practical tool for checking complex analytic number theory proofs. This could help resolve disagreements about the correctness of novel arguments.
+6. **What does Claude's Lean proof teach us?** The fact that Claude produced a complete, sorry-free Lean formalisation in a matter of days suggests that **formal verification** may become a practical tool for checking complex analytic number theory proofs. This could help resolve disagreements about the correctness of novel arguments.
 
 ---
 
@@ -484,27 +490,27 @@ The 0.68185 ceiling teaches a structural lesson: **any approach that reads only 
 
 ### Foundational
 
-- [Mon73] H. L. Montgomery, "The pair correlation of zeros of the zeta function," *Proc. Sympos. Pure Math.* **XXIV** (1973), 181–193. MR 0337821.
+- [Mon73] H. L. Montgomery, "The pair correlation of zeros of the zeta function," *Proc. Sympos. Pure Math.* **XXIV** (1973), 181-193. MR 0337821.
 - [Mon75] H. L. Montgomery, "Gaps between primes," 1975. Lecture notes for Hanover Talk, Summer 1975.
-- [GM78] P. X. Gallagher and J. H. Mueller, "Primes and zeros in short intervals," *J. Reine Angew. Math.* **303/304** (1978), 205–220.
-- [CG93] A. Y. Cheer and D. A. Goldston, "Simple zeros of the Riemann zeta-function," *Proc. Amer. Math. Soc.* **118** (1993), 365–373.
-- [CGdL20] R. Chirre, M. Gonçalves, and T. de Laat, "Pair correlation estimates for the zeros of the zeta function via semidefinite programming," arXiv:1810.08843, *J. Reine Angew. Math.* (2020).
+- [GM78] P. X. Gallagher and J. H. Mueller, "Primes and zeros in short intervals," *J. Reine Angew. Math.* **303/304** (1978), 205-220.
+- [CG93] A. Y. Cheer and D. A. Goldston, "Simple zeros of the Riemann zeta-function," *Proc. Amer. Math. Soc.* **118** (1993), 365-373.
+- [CGdL20] R. Chirre, M. Goncalves, and T. de Laat, "Pair correlation estimates for the zeros of the zeta function via semidefinite programming," arXiv:1810.08843, *J. Reine Angew. Math.* (2020).
 
 ### Mollifier Methods (Under RH)
 
-- [CGG98] J. B. Conrey, A. Ghosh, and S. M. Gonek, "Simple zeros of the Riemann zeta-function," *Proc. London Math. Soc.* **76** (1998), 497–522. [RH + GLH $\Rightarrow 19/27$]
-- [BHB13] H. M. Bui and D. R. Heath-Brown, "On simple zeros of the Riemann zeta-function," arXiv:1302.5018 (2013). [RH alone $\Rightarrow 19/27$]
+- [CGG98] J. B. Conrey, A. Ghosh, and S. M. Gonek, "Simple zeros of the Riemann zeta-function," *Proc. London Math. Soc.* **76** (1998), 497-522. [RH + GLH implies 19/27]
+- [BHB13] H. M. Bui and D. R. Heath-Brown, "On simple zeros of the Riemann zeta-function," arXiv:1302.5018 (2013). [RH alone implies 19/27]
 
 ### Unconditional Work on Simple Zeros
 
-- [PRZZ20] K. Pratt, N. Robles, A. Zaharescu, and D. Zeindler, "More than five-twelfths of the zeros of $\zeta$ are on the critical line," *Res. Math. Sci.* **7** (2020), Paper No. 2. [Unconditional: $>41.7\%$ on line, $>40.7\%$ simple and on line]
-- [Sel46] A. Selberg, "Contributions to the theory of the Riemann zeta-function," *Arch. Math. Naturv.* **48** (1946), 89–155.
+- [PRZZ20] K. Pratt, N. Robles, A. Zaharescu, and D. Zeindler, "More than five-twelfths of the zeros of $\zeta$ are on the critical line," *Res. Math. Sci.* **7** (2020), Paper No. 2. [Unconditional: >41.7% on line, >40.7% simple and on line]
+- [Sel46] A. Selberg, "Contributions to the theory of the Riemann zeta-function," *Arch. Math. Naturv.* **48** (1946), 89-155.
 
 ### Unconditional Montgomery (BGSTB24)
 
-- [BGSTB24] S. A. C. Baluyot, D. A. Goldston, A. I. Suriajaya, C. L. Turnage-Butterbaugh, "An unconditional Montgomery theorem for pair correlation of zeros of the Riemann zeta-function," *Acta Arith.* **214** (2024), 357–376. arXiv:2306.04799. DOI: 10.4064/aa230612-20-3.
+- [BGSTB24] S. A. C. Baluyot, D. A. Goldston, A. I. Suriajaya, C. L. Turnage-Butterbaugh, "An unconditional Montgomery theorem for pair correlation of zeros of the Riemann zeta-function," *Acta Arith.* **214** (2024), 357-376. arXiv:2306.04799. DOI: 10.4064/aa230612-20-3.
 
-### Removing RH from Montgomery (GS25–GS26)
+### Removing RH from Montgomery (GS25-GS26)
 
 - [GLSS25] D. A. Goldston, J. Lee, J. Schettler, A. I. Suriajaya, "Pair Correlation Conjecture for the zeros of the Riemann zeta-function I: simple and critical zeros," arXiv:2503.15449 (2025).
 - [GLSS25b] D. A. Goldston, J. Lee, J. Schettler, A. I. Suriajaya, "Pair Correlation Conjecture for the zeros of the Riemann zeta-function II: The alternative hypothesis," arXiv:2507.06823 (2025).
@@ -514,20 +520,20 @@ The 0.68185 ceiling teaches a structural lesson: **any approach that reads only 
 
 ### Weil's Quadratic Functional
 
-- [Bom00] E. Bombieri, "Remarks on Weil's quadratic functional in the theory of prime numbers, I," *Rend. Lincei Mat. Appl.* **11** (2000), 183–233. eudml.org/doc/252338.
+- [Bom00] E. Bombieri, "Remarks on Weil's quadratic functional in the theory of prime numbers, I," *Rend. Lincei Mat. Appl.* **11** (2000), 183-233. eudml.org/doc/252338.
 
 ### Fourier Optimization
 
-- [CCCM22] E. Carneiro, D. Chandee, R. Chirre, and Y. Milinovich, arXiv:2104.xxxx — bounds for integrals of $F(\alpha,T)$ at $|\alpha|>1$.
-- [CCdL23] R. Chirre, M. Gonçalves, T. de Laat, "Fourier optimization and Montgomery's pair correlation conjecture," *arXiv:2310.01913* (2023).
+- [CCM22] E. Carneiro, D. Chandee, R. Chirre, Y. Milinovich, "Fourier optimization and Montgomery's pair correlation conjecture," arXiv:2310.01913 (2023).
+- [CCdL23] R. Chirre, M. Goncalves, T. de Laat, "Pair correlation of zeros of the zeta function via semidefinite programming," arXiv:1810.08843 (2020).
 
 ### Claude's Result (2026)
 
 - Claude, "More Than Two Thirds of the Zeros of the Riemann Zeta Function Lie on the Critical Line," Anthropic, August 10, 2026. [PDF](https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf)
-- [anthropics/zeta-23-lean](https://github.com/anthropics/zeta-23-lean) — Lean 4 formalisation.
-- [anthropics/zeta-23-note](https://www-cdn.anthropic.com/23455459f8832d06bb175cc0f88d019aed962ef8.pdf) — informal expert note by Alpöge and Furman.
+- [anthropics/zeta-23-lean](https://github.com/anthropics/zeta-23-lean) -- Lean 4 formalisation.
+- [anthropics/zeta-23-note](https://www-cdn.anthropic.com/23455459f8832d06bb175cc0f88d019aed962ef8.pdf) -- informal expert note by Alpoge and Furman.
 - [Anthropic research page](https://www.anthropic.com/research/riemann-zeta)
 
 ---
 
-*This survey was compiled from publicly available papers, arXiv preprints, and the Anthropic Claude paper (2026). All claims are attributed to the original sources. References marked "arXiv" may have since appeared in peer-reviewed journals.*
+*This survey was compiled from publicly available papers, arXiv preprints, and the Anthropic Claude paper (2026). All claims are attributed to the original sources. References marked arXiv may have since appeared in peer-reviewed journals.*
