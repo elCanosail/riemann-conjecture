@@ -150,6 +150,12 @@ This project used a multi-model adversarial panel—inspired by Anthropic's sub-
 
 ---
 
+## Methodology
+
+The full multi-model agentic process — model assignments, fase ordering, failures, and recoveries — is documented in [`METHODOLOGY.md`](METHODOLOGY.md).
+
+---
+
 ## Scientific principles
 
 1. **Reproducibility** — every step is documented with model, prompt, and output
