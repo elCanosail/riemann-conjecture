@@ -1,0 +1,10 @@
+# Lean reference repo (has its own .git)
+references/zeta-23-lean/.git/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
