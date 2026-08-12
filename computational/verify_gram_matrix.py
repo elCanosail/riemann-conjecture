@@ -1,3 +1,6 @@
+# NOTE: This is a toy demonstration, not a reproduction of Anthropic's results.
+# Does not reproduce the asymptotic behavior of the pair-correlation kernel.
+
 """
 Numerical verification of Claude's Gram matrix framework.
 

@@ -2,6 +2,8 @@
 
 **A multi-model adversarial research program on the information barriers beyond the 2/3 bound.**
 
+> **Status:** This repository is an agentic exploration log, not a mathematical result. Claims have not been peer-reviewed. Lean formalization is planned but not implemented.
+>
 > **Preprint:** [`paper/main.tex`](paper/main.tex) — compiled PDF available in releases.
 > **Live baseline:** Claude/Anthropic (2026-08-10) — ≥ 2/3 of non-trivial zeros on the critical line, unconditionally.
 
@@ -13,9 +15,9 @@ On 2026-08-10, Anthropic announced that Claude proved unconditionally that at le
 
 This repository takes that result as the **new baseline** and asks: *what would it take to push beyond 2/3?*
 
-We conducted a systematic multi-model adversarial analysis across 10 research notebooks, 3 literature surveys, and 2 computational verifications. Six independent attack angles were explored: rank-trace inequality sharpening, SDP relaxation, non-commutative matrix structure, Hardy–Littlewood partial results, hybrid mollifier + pair-correlation methods, and higher-moment computation.
+We conducted a systematic multi-model adversarial analysis across 10 research notebooks, 3 literature surveys, and 2 computational demonstrations (toy implementations). Six analytical perspectives (multi-LLM exploration) were explored: rank-trace inequality sharpening, SDP relaxation, non-commutative matrix structure, Hardy–Littlewood partial results, hybrid mollifier + pair-correlation methods, and higher-moment computation.
 
-**Result:** The 2/3 bound is a **robust information barrier**. It is the optimal extraction from the two moments (tr(G), ‖G‖²_F) available unconditionally at bandwidth λ ≤ 1. No manipulation of this data—matrix inequalities, semidefinite programming, non-commutative structure, or hybrid methods—can improve it. Breaking the barrier requires **new data** (higher moments, bandwidth > 1, or zero-side information) or a **fundamentally different proof architecture**.
+**Result:** The 2/3 bound is a **robust information barrier**. It is the optimal extraction from the two moments (tr(G), ‖G‖²_F) available unconditionally at bandwidth λ ≤ 1, as outlined in the notebooks. No manipulation of this data—matrix inequalities, semidefinite programming, non-commutative structure, or hybrid methods—can improve it within the explored framework. Breaking the barrier requires **new data** (higher moments, bandwidth > 1, or zero-side information) or a **fundamentally different proof architecture**.
 
 This is a negative result, but a precise one. It maps the frontier exactly and identifies the specific advances needed to push past 2/3.
 
@@ -40,7 +42,7 @@ This is a negative result, but a precise one. It maps the frontier exactly and i
 
 ### The 2/3 information barrier
 
-The bound 2/3 is **tight** for the data available unconditionally. It was confirmed from six independent angles:
+The bound 2/3 is **tight** for the data available unconditionally. It was examined from six analytical perspectives (multi-LLM exploration):
 
 | # | Approach | Verdict | Why |
 |---|----------|---------|-----|
@@ -108,9 +110,9 @@ riemann-conjecture/
 
 ---
 
-## Computational verification
+## Computational demonstration
 
-Two scripts verify the framework numerically:
+Two scripts illustrate the framework numerically (toy implementations, not proofs):
 
 ### Zeta zeros on the critical line
 
@@ -127,7 +129,7 @@ All of the first 1000 non-trivial zeros of ζ(s) lie on Re(s) = 1/2 to 15 decima
 python computational/verify_gram_matrix.py
 ```
 
-Verifies algebraically that ‖G‖²_F / tr(G) → 1/λ + λ/3 at λ ∈ {0.5, 0.75, 1.0}, yielding bounds −0.167, 0.417, and 0.667 respectively.
+Illustrates algebraically that ‖G‖²_F / tr(G) → 1/λ + λ/3 at λ ∈ {0.5, 0.75, 1.0}, yielding bounds −0.167, 0.417, and 0.667 respectively. This is a toy demonstration; it does not reproduce the asymptotic behavior of the pair-correlation kernel.
 
 > ⚠️ **Numerical verification is not a proof.** These scripts serve as sanity checks and foundations for future experiments.
 
@@ -182,11 +184,11 @@ The full multi-model agentic process — model assignments, fase ordering, failu
 
 ---
 
-## Lean 4 formalization
+## Lean 4 formalization (planned)
 
-The `references/zeta-23-lean/` directory contains Anthropic's Lean 4 formalization of the 2/3 result, verified against Mathlib's definition of ζ(s). This provides machine-checked assurance of the theorem.
+The `references/zeta-23-lean/` directory is reserved for a future Lean 4 formalization of the 2/3 result. It currently contains only a placeholder README; the formalization is **planned but not yet implemented**.
 
-See `references/zeta-23-lean/README.md` for build instructions.
+See `references/zeta-23-lean/README.md` for current status.
 
 ---
 
