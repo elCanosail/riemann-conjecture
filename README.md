@@ -7,6 +7,10 @@
 > **Preprint:** [`paper/main.tex`](paper/main.tex) — compiled PDF available in releases.
 > **Live baseline:** Claude/Anthropic (2026-08-10) — ≥ 2/3 of non-trivial zeros on the critical line, unconditionally.
 
+> **⚠️ Status update — 2026-11-26.** On **2026-11-20** Levent Alpöge released a Lean 4 library proving the Riemann Hypothesis (and the GRH for Dirichlet L-functions); on **2026-11-21** the Lean FRO and the Mathlib Initiative [certified the statement and the proof](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/). The proof is **prime-side** — a Chebyshev-type argument repaired by chained theta lifts that manufacture the divisibility ("multiplicity") which Stepanov gets from divisors over function fields. It never touches the statistics of zeros.
+>
+> This repository's claim survives **as scoped**: from the two moments of the Gram matrix at bandwidth λ ≤ 1, 2/3 is optimal and 0.68185 needs RH. None of the six verdicts below is contradicted — the winning proof does not enter that data space. What does not survive is the **framing**: pushing the constant past 2/3 was a side road, not the frontier of the problem. See [`notebook/011-alpoge-y-nuestra-barrera.md`](notebook/011-alpoge-y-nuestra-barrera.md).
+
 ---
 
 ## Abstract
