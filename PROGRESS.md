@@ -42,3 +42,18 @@
 ✅ **Fase 2: Computational + adversarial analysis** — complete (3 analyses + synthesis)
 ✅ **Fase 3: Multi-model research rounds** — complete (3 analyses + synthesis)
 🟡 **Fase 4: Documentation** — paper skeleton with key sections, needs final polish
+
+---
+
+## 2026-11-26 — RH formally verified: this program closes
+
+- **2026-11-20**: Levent Alpöge publishes a Lean 4 proof of RH (and GRH), ~17 M lines, ~175k files.
+- **2026-11-21**: Lean FRO + Mathlib Initiative certify statement and proof; independent checkers (`con-leche`, `con-ron`) and Sutherland's verification files confirm.
+- **2026-11-26**: `notebook/011-alpoge-y-nuestra-barrera.md` maps the proof against our six verdicts.
+
+Verdict on our own work: the barrier holds **as scoped** (zero-side moment data, λ ≤ 1). It never
+claimed to bound prime-side or automorphic arguments, and the winning proof is exactly that.
+The framing — "the frontier is pushing 2/3" — is retired. Repo stays public as a dated record;
+the durable asset is the multi-model method, which lives in `multi-model-orchestration`.
+
+**Status: closed (historical).**
